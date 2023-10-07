@@ -1,5 +1,5 @@
 # portscanner
-simple python portscanner with command line and html output, can scan IP and port ranges or lists
+simple python port scanner with command line and html output, can scan IP and port ranges or lists
 
 # Examples:
   python script_name.py 192.168.1.10
