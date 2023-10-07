@@ -75,10 +75,15 @@ def main(target, ports):
         
         progress_count += 1
 
+    # Clear the last status message
+    sys.stdout.write("\r" + " " * 50 + "\r")
+    sys.stdout.flush()
+
     if open_ports:
         original_cmd = ' '.join(sys.argv)
         generate_html_file(open_ports, original_cmd)
         os.system('open output.html')
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
